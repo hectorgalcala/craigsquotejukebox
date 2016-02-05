@@ -274,7 +274,7 @@ quotes = [
   {
   title: "75% of today was problem solving. Understand the barrier, ask the right questions, recognize the opportunity and empower people to execute.",
   author: ''
-  },
+  }
 ]
 
 =begin
@@ -363,4 +363,4 @@ other_quotes = [
     title: "A person who never made a mistake never tried anything new.",
     author: "Albert Einstein"
   }
-];
+]
