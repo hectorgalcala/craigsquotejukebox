@@ -1,0 +1,52 @@
+/*// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/*/
+@import url(https://fonts.googleapis.com/css?family=Josefin+Slab:100);
+
+body {
+  font-family: 'Josefin Slab', serif;
+  background:#2CBAE7;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align:center;
+}
+
+h1 {
+  margin:50px 0;
+  font-family: Tangerine, 'serif';
+  font-size:7em;
+  text-align:center;
+  text-shadow: 1px 1px 1px white;
+}
+h2{
+  font-style: italic;
+}
+.elbox {
+  margin:0 auto;
+  width:80%;
+  p:first-child{
+    font-size: 2rem;
+  }p:nth-child(2){
+    font-style: italic;
+  }
+}
+
+.button {
+  background: #3498db;
+  width: 150px;
+  padding: 1%;
+  margin:0 auto;
+  border-radius: 3px;
+  p {
+	  text-align: center;
+  	text-transform: uppercase;
+    color: #FFF;
+    user-select: none;
+  }
+  &:hover {
+    cursor: help;
+    background-color: orange;
+  }
+}

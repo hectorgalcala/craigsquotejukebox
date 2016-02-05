@@ -1,0 +1,83 @@
+// # Place all the behaviors and hooks related to the matching controller here.
+// # All this logic will automatically be available in application.js.
+// # You can use CoffeeScript in this file: http://coffeescript.org/
+$(document).ready(function() {
+console.log("Pages.js loaded");
+  function genquote(){
+    var quotes = [
+      {
+        title: "Design is not just what it looks like and feels like. Design is how it works.",
+        author: "Steve Jobs"
+      },
+      {
+        title: "Nothing is impossible, the word itself says “I’m possible”!",
+        author: "Audrey Hepburn"
+      },
+      {
+        title: "I’ve learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel.",
+        author: "Maya Angelou"
+      },
+      {
+        title: "Whether you think you can or you think you can’t, you’re right.",
+        author: "Henry Ford"
+      },
+      {
+        title: "Perfection is not attainable, but if we chase perfection we can catch excellence.",
+        author: "Vince Lombardi"
+      },
+      {
+        title: "Life is 10% what happens to me and 90% of how I react to it.",
+        author: "Charles Swindoll"
+      },
+      {
+        title: "If you look at what you have in life, you’ll always have more. If you look at what you don’t have in life, you’ll never have enough",
+        author: "Oprah Winfrey"
+      },
+      {
+        title: "Remember no one can make you feel inferior without your consent.",
+        author: "Eleanor Roosevelt"
+      },
+      {
+        title: "I can’t change the direction of the wind, but I can adjust my sails to always reach my destination.",
+        author: "Jimmy Dean"
+      },
+      {
+        title: "Believe you can and you’re halfway there.",
+        author: "Theodore Roosevelt"
+      },
+      {
+        title: "To handle yourself, use your head; to handle others, use your heart.",
+        author: "Eleanor Roosevelt"
+      },
+      {
+        title: "Too many of us are not living our dreams because we are living our fears.",
+        author: "Les Brown"
+      },
+      {
+        title: "Strive not to be a success, but rather to be of value.",
+        author: "Albert Einstein"
+      },
+      {
+        title: "It is during our darkest moments that we must focus to see the light.",
+        author: "Aristotle Onassis"
+      },
+      {
+        title: "Change your thoughts and you change your world.",
+        author: "Norman Vincent Peale"
+      },
+      {
+        title: "A person who never made a mistake never tried anything new.",
+        author: "Albert Einstein"
+      }
+    ];
+random = quotes[Math.floor(Math.random() * quotes.length)];
+
+		$("#quote").text(random.title);
+    $("#author").text("By: " + random.author);
+  }
+
+$(".button").on( "click", function() {
+    genquote();
+  });
+
+});
