@@ -593,17 +593,12 @@ $(document).ready(function() {
     ];
 
 random = quotes[Math.floor(Math.random() * quotes.length)];
-console.log("Quotes in db:");
-console.log(quotes.length);
-
 		$("#quote").text(random.quote);
     // $("#author").text("By: " + random.author);
   }
 
 $(".button").on("click", function() {
     genquote();
-    console.log("Quote printed");
-    console.log(random);
   });
 
 });
